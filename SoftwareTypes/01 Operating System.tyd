@@ -1,0 +1,267 @@
+SoftwareType
+	{
+	Name			"Operating System"
+	Category		Computing
+	Description		"The Operating System is the largest piece of software in Software Inc.
+Most software needs an Operating System to run on. When people stop buying a line of Operating Systems, they will also stop buying software for them."
+	Categories
+		[
+			{
+			Name		Computer
+			Description	"For the table"
+			Popularity	0.95
+			Retention	72
+			TimeScale	1
+			Iterative	1
+			IdealPrice	200
+			Submarkets	[ 1; 4; 4]
+			}
+			{
+			Name		Console
+			Description	"For the TV"
+			LagBehind	5
+			Popularity	0.75
+			Retention	48
+			TimeScale	0.8
+			Iterative	1
+			IdealPrice	160
+			Submarkets	[ 4; 1; 0]
+			}
+			{
+			Name		Phone
+			Description	"For the pocket"
+			LagBehind	10
+			Popularity	1
+			Retention	36
+			TimeScale	0.7
+			Iterative	1
+			IdealPrice	140
+			Unlock		1995
+			Submarkets	[ 4; 1; 2]
+			}
+		]
+	Random			0
+	OptimalDevTime	75
+	SubmarketNames	[ Simplicity; Security; Customization ]
+	NameGenerator	OS
+	Features
+		[
+			{
+			Name		System
+			Spec		System
+			DevTime		10
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Dependencies    "Kernel"
+			Features
+				[
+					{
+					Name		"Multitasking"
+					Description "Let your users pretend they can multitask by having several applications open at any one time"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 2 ]
+					}
+					{
+					Name		"Touch"
+					Description "You can never have enough greasy finger prints on a surface"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"User accounts"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 2; 0 ]
+					}
+					{
+					Name		"Plug'n'Play"
+					Description	"Allow the user to interact with the operating system in any number of ways"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 3; 0; 1 ]
+					}
+					{
+					Name		"File encryption"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"System recovery"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Virtualization"
+					Description "I put an OS in your OS, etc."
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Code signing"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+				]
+			}
+			{
+			Name		Interface
+			Spec		2D
+			DevTime		4
+			CodeArt		1
+			Submarkets	[ 1; 0; 1 ]
+			Features
+				[
+					{
+					Name		"Custom themes"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Windowing system"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Unified search"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Themes"
+					DevTime		4
+					Level		1
+					CodeArt		0.5
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Widgets"
+					DevTime		3
+					Level		1
+					CodeArt		0.75
+					Submarkets	[ 1; 0; 2 ]
+					}
+					{
+					Name		"Notifications"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+				]
+			}
+			{
+			Name		"3D rendering"
+			Spec		3D
+			Optional	True
+			Unlock		1985
+			DevTime		10
+			CodeArt		1
+			Submarkets	[ 1; 0; 1 ]
+			Features	[ ]
+			}
+			{
+			Name		Audio
+			Spec		Audio
+			DevTime		6
+			CodeArt		1
+			Submarkets	[ 1; 0; 1 ]
+			Features
+				[
+					{
+					Name		"Surround sound"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Speech recognition"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 2; 0; 1 ]
+					}
+					{
+					Name		"Microphone surveillance"
+					Description "Listen in on your users' conversations to find and fix bugs before they are reported, at the risk of getting caught"
+					Server		0.0002
+					DevTime		3
+					Level		3
+					CodeArt		1
+					Submarkets	0
+					Script_EndOfDay
+"if (Product.GetVar(\"MicMining\", true))//Check if player has been caught
+	{
+	Product.Bugs = Max(0, Product.Bugs - Product.Userbase * 0.01);//Remove 1 bug from product for each 100th active user
+	if (Random() * Product.Userbase > 1000000 * Product.Category.Popularity)//Random chance of getting caught
+		{
+		LaunchLawsuit(\"SpyingOnUsers\", Product.Sum, 1);//Create anonymous lawsuit
+		Product.DevCompany.AddFans(-Product.Userbase, Product.Category);//Remove fans and market recognition from player in category
+		Product.Userbase = Product.Userbase * 0.05;//Remove 95% of active users
+		Product.KillAwareness();//Remove all marketing
+		Product.PutVar(\"MicMining\", false);//Mark player as caught for this product
+		}
+	}"
+					}
+				]
+			}
+			{
+			Name		Network
+			Optional	True
+			Spec		Network
+			Description	"How will anonymous people troll each other all over the world without this handy feature?"
+			Unlock		1985
+			DevTime		8
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Auto-update"
+					Description	"Patch bugs, secure against malware and restart in the middle of an unsaved 60 page essay"
+					Server		0.0002
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"App store"
+					Server		0.0002
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Cloud backup"
+					Server		0.0002
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+				]
+			}
+		]
+	}

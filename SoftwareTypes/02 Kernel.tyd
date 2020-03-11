@@ -1,0 +1,77 @@
+SoftwareType
+	{
+	Name			"Kernel"
+	Category    	Software
+	Description 	"The Main core of a Operative System"
+	Random			0.1
+	Popularity		0.5
+	Retention		80
+	Iterative		1
+	IdealPrice		70
+	Submarket    	[ 1; 2; 2]	
+	OptimalDevTime	35
+	SubmarketNames	[ Basic Tasks; Fiability; Security ]
+	NameGenerator   Kernel
+	InHouse			True
+	Features
+		[
+			{
+				Name 		"Core"
+				Spec		System
+				DevTime     14
+				CodeArt		1
+				Submarkets  [ 1; 1; 1 ]
+				Features
+					[
+						{
+						Name 			"I/O Manager"
+						Description		"Manages the comunication between different device drivers, permits the correct treatment of all drivers in a homogeneous way."	
+						DevTime       	3
+						Level			1
+						CodeArt			1
+						Submarkets 		[ 3; 1; 0 ]
+						}
+						{
+						Name 			"Process Manager"
+						Description		"Creates, deletes and modifies the states of all proccesses and threads."	
+						DevTime       	6
+						Level			1
+						CodeArt			1
+						Submarkets 		[ 3; 2; 1 ]
+						}
+						{
+						Name 			"Object Manager"
+						Description		"Creates, deletes and modifies objects used by the OS."	
+						DevTime       	4
+						Level			2
+						CodeArt			1
+						Submarkets 		[ 4; 1; 1 ]
+						}
+						{
+						Name 			"LPC"
+						Description		"Local ProcedureCallFacility (LPC)."	
+						DevTime       	5
+						Level			2
+						CodeArt			1
+						Submarkets 		[ 2; 4; 1 ]
+						}
+						{
+						Name 			"VMM"
+						Description		"The Virtual Memory Manager (VMM) provides the management of the system's virtual memory. Using disk resources instead of RAM."	
+						DevTime       	6
+						Level			2
+						CodeArt			1
+						Submarkets 		[ 1; 4; 1 ]
+						}
+						{
+						Name 			"Security"
+						Description		"Just security enhancing."	
+						DevTime       	5
+						Level			2
+						CodeArt			1
+						Submarkets 		[ 0; 1; 4 ]
+						}
+					]
+			}
+		]
+	}

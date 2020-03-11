@@ -1,0 +1,31 @@
+SoftwareType
+	{
+	Name			"Project Management"
+	Category    	Software
+	Description 	"Helping developer's teams cooperate, contribute and help each other in various projects."
+	Random			0.7
+	Popularity		0.8
+	Retention		70
+	Iterative		1
+	IdealPrice		30
+	Submarket    	[ 3; 2; 1]	
+	OptimalDevTime	43
+	SubmarketNames	[ Usability; Fiability; Security ]
+	NameGenerator   Project Management
+	InHouse			True
+	Features
+		[
+			{
+				Name 		    
+				Spec            
+				DevTime         
+				CodeArt			
+				Submarkets 		[ 1; 1; 1 ]
+				Features
+					[
+						{
+						
+						}
+					]
+			}
+		]

@@ -1,0 +1,21 @@
+SoftwareType
+	{
+	Name			"DBMS"
+	Category    	Software
+	Description 	"A Data Base Management System (DBMS) it's a group of programs that allows the storage, modification and extraction of information on a database."
+	Random			0.3
+	Popularity		0.4
+	Retention		65
+	Iterative		1
+	IdealPrice		45
+	Submarket    	[ 3; 3; 2]	
+	OptimalDevTime	50
+	SubmarketNames	[ Usability; Fiability; Speed ]
+	NameGenerator   DBMS
+	InHouse			True
+	Features
+		[
+			{
+				Name
+			}
+		]

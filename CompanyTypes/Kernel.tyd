@@ -1,0 +1,14 @@
+CompanyType
+	{
+	Specialization		"Kernel"
+	PerYear			0.1
+	Min				2
+	Max				4
+	Types
+		[
+			{
+			Software	"Kernel"
+			Chance		1
+			}
+		]
+	}
