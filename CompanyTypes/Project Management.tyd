@@ -1,0 +1,14 @@
+CompanyType
+	{
+	Specialization		"Project Management"
+	PerYear			0.5
+	Min				2
+	Max				5
+	Types
+		[
+			{
+			Software	"Project Management"
+			Chance		1
+			}
+		]
+	}

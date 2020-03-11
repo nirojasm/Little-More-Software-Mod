@@ -1,0 +1,14 @@
+CompanyType
+	{
+	Specialization		"DBMS"
+	PerYear			0.4
+	Min				2
+	Max				5
+	Types
+		[
+			{
+			Software	"DBMS"
+			Chance		1
+			}
+		]
+	}
