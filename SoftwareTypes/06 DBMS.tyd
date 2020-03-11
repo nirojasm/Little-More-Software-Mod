@@ -17,11 +17,12 @@ SoftwareType
 	Features
 		[
 			{
-				Name 		"Interface"
-				Spec        2D
-				DevTime 	5
-				CodeArt     0.5
-				Submarkets  [ 2; 1; 1 ]
+				Name 		 "Interface"
+				Spec         2D
+				DevTime 	 5
+				CodeArt      0.5
+				Dependencies "2D Editor"
+				Submarkets   [ 2; 1; 1 ]
 				Features
 					[
 						{
@@ -33,17 +34,16 @@ SoftwareType
 						}
 						{
 						Name 				"Data Visualization"
-						DevTime 			4
+						DevTime 			3
 						Level				1
 						CodeArt				0.5
 						Submarkets 			[ 2; 2; 1 ]
 						}
 						{
 						Name 				"GUI"
-						DevTime             4
+						DevTime             3
 						Level				2
 						CodeArt				0.5
-						Dependencies		"2D Editor"
 						Submarkets 			[ 2; 1; 0 ]
 						}
 					]

@@ -56,7 +56,7 @@ SoftwareType
 			{
 				Name 		 	"System"   
 				Spec            System
-				DevTime         8
+				DevTime         7
 				CodeArt			1
 				Submarkets 		[ 2; 1; 1 ]
 				Features

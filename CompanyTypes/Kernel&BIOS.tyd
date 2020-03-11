@@ -1,0 +1,18 @@
+CompanyType
+	{
+	Specialization		"Kernel & BIOS"
+	PerYear			0.3
+	Min				2
+	Max				5
+	Types
+		[
+			{
+			Software	"Kernel"
+			Chance		1
+			}
+			{
+			Software	"BIOS"
+			Chance		1
+			}
+		]
+	}

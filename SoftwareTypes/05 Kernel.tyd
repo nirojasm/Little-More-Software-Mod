@@ -18,7 +18,7 @@ SoftwareType
 			{
 				Name 		"Core"
 				Spec		System
-				DevTime     14
+				DevTime     12
 				CodeArt		1
 				Submarkets  [ 1; 1; 1 ]
 				Features
@@ -29,15 +29,15 @@ SoftwareType
 						DevTime       	3
 						Level			1
 						CodeArt			1
-						Submarkets 		[ 3; 1; 0 ]
+						Submarkets 		[ 1; 2; 2 ]
 						}
 						{
 						Name 			"Process Manager"
 						Description		"Creates, deletes and modifies the states of all proccesses and threads."	
-						DevTime       	6
+						DevTime       	4
 						Level			1
 						CodeArt			1
-						Submarkets 		[ 3; 2; 1 ]
+						Submarkets 		[ 1; 2; 2 ]
 						}
 						{
 						Name 			"Object Manager"
@@ -50,7 +50,7 @@ SoftwareType
 						{
 						Name 			"LPC"
 						Description		"Local ProcedureCallFacility (LPC)."	
-						DevTime       	5
+						DevTime       	4
 						Level			2
 						CodeArt			1
 						Submarkets 		[ 2; 4; 1 ]
@@ -58,7 +58,7 @@ SoftwareType
 						{
 						Name 			"VMM"
 						Description		"The Virtual Memory Manager (VMM) provides the management of the system's virtual memory. Using disk resources instead of RAM."	
-						DevTime       	6
+						DevTime       	5
 						Level			2
 						CodeArt			1
 						Submarkets 		[ 1; 4; 1 ]
@@ -66,7 +66,7 @@ SoftwareType
 						{
 						Name 			"Security"
 						Description		"Just security enhancing."	
-						DevTime       	5
+						DevTime       	4
 						Level			2
 						CodeArt			1
 						Submarkets 		[ 0; 1; 4 ]
