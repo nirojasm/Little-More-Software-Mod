@@ -12,10 +12,86 @@ SoftwareType
 	OptimalDevTime	50
 	SubmarketNames	[ Usability; Fiability; Speed ]
 	NameGenerator   DBMS
+	OSSupport       Computer
 	InHouse			True
 	Features
 		[
 			{
-				Name
+				Name 		"Interface"
+				Spec        2D
+				DevTime 	5
+				CodeArt     0.5
+				Submarkets  [ 2; 1; 1 ]
+				Features
+					[
+						{
+						Name 				"Relational Models"		
+						DevTime 			3
+						Level 				1
+						CodeArt 			0
+						Submarkets 			[ 2; 1; 0 ]
+						}
+						{
+						Name 				"Data Visualization"
+						DevTime 			4
+						Level				1
+						CodeArt				0.5
+						Submarkets 			[ 2; 2; 1 ]
+						}
+						{
+						Name 				"GUI"
+						DevTime             4
+						Level				2
+						CodeArt				0.5
+						Dependencies		"2D Editor"
+						Submarkets 			[ 2; 1; 0 ]
+						}
+					]
+			}
+			{
+				Name 		"System"
+				Spec        System
+				DevTime 	8
+				CodeArt     1
+				Submarkets  [ 2; 1; 1 ]
+				Features
+					[
+						{
+						Name 		"Relational Algebra"
+						DevTime 	2
+						Level 		1
+						CodeArt 	1
+						Submarkets  [ 1; 0; 1]
+						}
+						{
+						Name 		"Basic Search"	
+						DevTime 	2
+						Level       1
+						CodeArt     1
+						Submarkets  [1; 1; 0]
+						}
+						{
+						Name 		"Complex Search"
+						DevTime     3
+						Level       2
+						CodeArt     1
+						Submarkets  [ 1; 2; 0]
+						}
+						{
+						Name 		"Foreign Scripts Support"
+						DevTime     3
+						Level       2
+						CodeArt     1
+						Submarkets  [ 2; 1; 0]
+						}
+						{
+						Name 		"Debugging Terminal"
+						DevTime     4
+						Level       2
+						CodeArt     1
+						Submarkets  [ 1; 1; 1]
+						}
+					]
 			}
 		]
+    }
