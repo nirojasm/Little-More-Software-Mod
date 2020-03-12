@@ -8,8 +8,7 @@ SoftwareType
 	Retention		65
 	Iterative		1
 	IdealPrice		45
-	Submarket    	[ 3; 3; 2]	
-	OptimalDevTime	50
+	OptimalDevTime	37
 	SubmarketNames	[ Usability; Fiability; Speed ]
 	NameGenerator   DBMS
 	OSSupport       Computer

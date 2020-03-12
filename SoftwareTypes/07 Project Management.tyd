@@ -7,9 +7,8 @@ SoftwareType
 	Popularity		0.8
 	Retention		70
 	Iterative		1
-	IdealPrice		30
-	Submarket    	[ 3; 2; 1]	
-	OptimalDevTime	43
+	IdealPrice		30	
+	OptimalDevTime	37
 	SubmarketNames	[ Usability; Fiability; Security ]
 	NameGenerator   Project Management
 	InHouse			True
@@ -18,7 +17,7 @@ SoftwareType
 			{
 				Name 		 	"Networking"   
 				Spec            Network
-				DevTime         5
+				DevTime         6
 				CodeArt			1
 				Submarkets 		[ 1; 1; 1 ]
 				Features
@@ -27,7 +26,7 @@ SoftwareType
 						Name 				"LAN"
 						Description			"Connect all team to a same local project network"
 						Server				0.0004
-						DevTime 			2
+						DevTime 			4
 						Level 				1
 						CodeArt 			1
 						Submarkets 			[ 2; 1; 1 ]
@@ -36,7 +35,7 @@ SoftwareType
 						Name 				"WAN"
 						Description			"Connection between more LANs"
 						Server              0.0008
-						DevTime 			2
+						DevTime 			4
 						Level 				1
 						CodeArt 			1
 						Submarkets 			[ 2; 2; 0 ]
@@ -45,7 +44,7 @@ SoftwareType
 						Name 				"Internet"
 						Description			"Worldwide Connection!"
 						Server 				0.0012
-						DevTime 			3
+						DevTime 			4
 						Level 				2
 						CodeArt 			1
 						Submarkets 			[ 3; 1; 0 ]
@@ -93,7 +92,7 @@ SoftwareType
 						}
 						{
 						Name 				"Code Repositories"
-						DevTime 			3
+						DevTime 			4
 						Level 				2
 						CodeArt 			1
 						Submarkets 			[ 1; 0; 2 ]

@@ -1,5 +1,5 @@
 -start(pre)
--pre(base)
+-pre(ext)
 A
 AB
 B
@@ -10,16 +10,6 @@ F
 GP
 X
 Z
--base(ext,stop)
-1
-2
-3
-4
-5
-6
-7
-8
-9
 -ext(stop)
 XT
 H

@@ -8,8 +8,7 @@ SoftwareType
 	Retention		80
 	Iterative		1
 	IdealPrice		70
-	Submarket    	[ 1; 2; 2]	
-	OptimalDevTime	35
+	OptimalDevTime	33
 	SubmarketNames	[ Basic Tasks; Fiability; Security ]
 	NameGenerator   Kernel
 	InHouse			True
