@@ -23,6 +23,20 @@ SoftwareType
 				Features
 					[
 						{
+						Name 			"Boot Loader"	
+						DevTime       	2
+						Level			1
+						CodeArt			1
+						Submarkets 		[ 1; 2; 0 ]
+						}
+					    {
+					    Name 			"Startup Messages"	
+						DevTime       	2
+						Level			1
+						CodeArt			1
+						Submarkets 		[ 1; 1; 1 ]
+					    }
+						{
 						Name 			"I/O Manager"
 						Description		"Manages the comunication between different device drivers, permits the correct treatment of all drivers in a homogeneous way."	
 						DevTime       	3
@@ -31,9 +45,17 @@ SoftwareType
 						Submarkets 		[ 1; 2; 2 ]
 						}
 						{
+						Name 			"Kernel Log File"
+						Description		"Keeping an eye on all processes."		
+						DevTime       	3
+						Level			1
+						CodeArt			1
+						Submarkets 		[ 1; 1; 1 ]
+						}
+						{
 						Name 			"Process Manager"
 						Description		"Creates, deletes and modifies the states of all proccesses and threads."	
-						DevTime       	4
+						DevTime       	3
 						Level			1
 						CodeArt			1
 						Submarkets 		[ 1; 2; 2 ]
@@ -41,8 +63,8 @@ SoftwareType
 						{
 						Name 			"Object Manager"
 						Description		"Creates, deletes and modifies objects used by the OS."	
-						DevTime       	4
-						Level			2
+						DevTime       	3
+						Level			1
 						CodeArt			1
 						Submarkets 		[ 4; 1; 1 ]
 						}
@@ -61,6 +83,22 @@ SoftwareType
 						Level			2
 						CodeArt			1
 						Submarkets 		[ 1; 4; 1 ]
+						}
+						{
+						Name 			"GRUB"
+						Description     "The Grand Unified Boot Loader (GRUB) allows easier kernel image and configuration selection. Contains an easy-to-use selection menu."	
+						DevTime       	4
+						Level			2
+						CodeArt			1
+						Submarkets 		[ 1; 2; 2 ]
+						}
+						{
+						Name 			"Multi-Kernel Support"
+						DevTime       	5
+						Level			2
+						CodeArt			1
+						Submarkets 		[ 3; 1; 1 ]
+						Unlock          1990
 						}
 						{
 						Name 			"Security"

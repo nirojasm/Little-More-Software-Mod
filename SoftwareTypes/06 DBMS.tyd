@@ -8,7 +8,7 @@ SoftwareType
 	Retention		65
 	Iterative		1
 	IdealPrice		45
-	OptimalDevTime	37
+	OptimalDevTime	40
 	SubmarketNames	[ Usability; Fiability; Speed ]
 	NameGenerator   DBMS
 	OSSupport       Computer
@@ -20,6 +20,7 @@ SoftwareType
 				Spec         2D
 				DevTime 	 5
 				CodeArt      0.5
+				Optional     True
 				Dependencies "2D Editor"
 				Submarkets   [ 2; 1; 1 ]
 				Features
@@ -84,11 +85,79 @@ SoftwareType
 						Submarkets  [ 2; 1; 0]
 						}
 						{
+						Name 		"Shell Integration"
+						DevTime     3
+						Level       2
+						CodeArt     1
+						Submarkets  [ 1; 1; 1]
+						}
+						{
 						Name 		"Debugging Terminal"
 						DevTime     4
 						Level       2
 						CodeArt     1
 						Submarkets  [ 1; 1; 1]
+						}
+                        {
+                        Name 		"Setup Wizard"
+                        Description "Makes easier to setup this software for non-experienced users"
+						DevTime     4
+						Level       2
+						CodeArt     1
+						Submarkets  [ 2; 1; 3]
+                        }
+						{
+						Name 		"ODBC"
+						Description "The Open DataBase Connectivity (ODBC) makes possible to access to any data, no matter the DBMS used."
+						DevTime     5
+						Level       2
+						CodeArt     1
+						Submarkets  [ 2; 2; 1]
+						Unlock      1992
+						}
+						{
+						Name 		"XML Integration"
+						DevTime     4
+						Level       2
+						CodeArt     1
+						Submarkets  [ 2; 2; 3]
+						Unlock      1997
+						}
+						}
+					]
+			}
+			{
+				Name 		"Server"
+				Spec    	Network
+				DevTime     3
+				CodeArt     1
+				Submarkets  [ 1; 1; 2]
+				Features
+					[
+						{
+						Name 		"Local Access"
+					    Server      0.0001
+						DevTime 	2
+						Level		1
+						CodeArt 	1
+						Submarkets 	[ 1; 1; 1]
+						}
+						{
+						Name 		"Multi-User Access"
+					    Server      0.0001
+						DevTime 	3
+						Level		1
+						CodeArt 	1
+						Submarkets 	[ 1; 1; 2]
+						}
+						{
+						Name  		"Dedicated Server Hosting"
+						Server      0.001
+						DevTime 	6
+						Level 	 	2
+						CodeArt 	1
+						Submarkets 	[ 1; 1; 3]
+						Unlock      1995
 						}
 					]
 			}

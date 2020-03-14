@@ -6,6 +6,7 @@ Net
 Data
 Source
 Daemon
+Envidia
 Super
 Lava
 Window
@@ -20,7 +21,9 @@ Bot
 Int
 Core
 SQL
+Oax
 -base2(ext,stop)
+Access
 Find
 Fine
 Bean
@@ -31,7 +34,11 @@ Slim
 Shade
 Shadow
 System
+Office
 -ext(stop)
+Base
+Server
+DB
 Workbench
 Lite
 Pro
