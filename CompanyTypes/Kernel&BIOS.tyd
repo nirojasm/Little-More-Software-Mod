@@ -9,6 +9,7 @@ CompanyType
 			{
 			Software	"Kernel"
 			Chance		1
+			Force       True
 			}
 			{
 			Software	"BIOS"

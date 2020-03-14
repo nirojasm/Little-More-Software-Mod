@@ -1,7 +1,7 @@
 CompanyType
 	{
 	Specialization		"Project Management"
-	PerYear			0.5
+	PerYear			0.3
 	Min				2
 	Max				5
 	Types

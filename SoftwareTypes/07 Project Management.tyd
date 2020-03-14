@@ -7,7 +7,7 @@ SoftwareType
 	Popularity		0.8
 	Retention		70
 	Iterative		1
-	IdealPrice		30	
+	IdealPrice		40	
 	OptimalDevTime	37
 	SubmarketNames	[ Usability; Fiability; Security ]
 	NameGenerator   Project Management

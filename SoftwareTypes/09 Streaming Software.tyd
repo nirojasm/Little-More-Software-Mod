@@ -1,0 +1,229 @@
+SoftwareType
+	{
+	Name 			"Streaming Software"
+	Category    	Software
+	Description 	"Stream your favorite games on the Internet!"
+	Random 			0.5
+	Popularity      0.9
+	Retention 		60
+	Iterative 		1
+	Unlock  		1990
+	IdealPrice 		50
+	OptimalDevTime  40
+	SubmarketNames  [ Funcionality; Quality; Usability ]
+	NameGenerator   Streaming
+	OSSupport       [ Computer; Console ]
+	InHouse         False
+	Features
+		[
+			{
+			Name 			"Core"
+			Description     "Basic Features"
+			Spec 			System
+			DevTime 		4
+			CodeArt 		1
+			Submarkets 		[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name 			"Recording"
+					DevTime 		2
+					Level 			1
+					CodeArt 		1
+					Submarkets 		[ 1; 1; 1 ]
+					}
+					{
+					Name 			"Quick Access Keys"
+					Description 	"Press Alt+R to begin recording"
+					DevTime 		2
+					Level 			1
+					CodeArt 		1
+					Submarkets 		[ 1; 1; 2 ]
+					}
+					{
+					Name 			"Live Chat"
+					Description 	"Press F to pay respects"
+					DevTime 		4
+					Level 			1
+					CodeArt 		1
+					Submarkets 		[ 1; 1; 2 ]
+					Unlock 			2000
+					}
+					{
+					Name 			"Enhanced Recording"
+					DevTime 		3
+					Level 			2
+					CodeArt 		1
+					Submarkets 		[ 1; 1; 2 ]
+					}
+					{
+					Name 			"CPU Optimization"
+					DevTime 		5
+					Level 			2
+					CodeArt 		1
+					Submarkets 		[ 3; 1; 2 ]
+					}
+					{
+					Name 			"Live effects"
+					Description     "Support for live GIF's, and other types of media"
+					DevTime 		4
+					Level			2
+					CodeArt			0.5
+					Submarkets      [ 1; 2; 2 ]
+					Unlock 			1995
+					}
+					{
+					Name 			"Relay"
+					DevTime 		4
+					Level			2
+					CodeArt			1
+					Submarkets      [ 1; 2; 3 ]
+					Unlock 			2000
+					}
+				]
+			}
+			{
+			Name 			"Interface"
+			Spec 			2D
+			DevTime 		3
+			CodeArt 	 	0.5
+			Submarkets 		[ 2; 1; 2 ]
+			Features	
+				[
+					{
+					Name 			"Basic UI"
+					DevTime 		3
+					Level 			1
+					CodeArt			0.5
+					Submarkets  	[ 1; 0; 1 ]
+					}
+					{
+					Name 			"2D GUI"
+					DevTime 		4
+					Level			1
+					CodeArt			0
+					Dependencies	"2D Editor"
+					Submarkets 		[ 1; 2; 1 ]
+					}
+					{
+					Name            "Customizable GUI"
+					DevTime 		4
+					Level			2
+					CodeArt			0
+					Dependencies	"2D Editor"
+					Submarkets 		[ 1; 2; 1 ]
+					}
+					{
+					Name            "3D Implementation"
+					DevTime 		5
+					Level			2
+					CodeArt			0
+					Dependencies	"3D Editor"
+					Submarkets 		[ 2; 3; 1 ]
+					Unlock  		1985
+					}
+					{
+					Name            "Dark Mode"
+					Description     "Finally!!!"
+					DevTime 		6
+					Level			2
+					CodeArt			0.5
+					Dependencies	"2D Editor"
+					Submarkets 		[ 1; 4; 2 ]
+					Unlock  		1995
+					}
+				]
+			}
+			{
+			Name        	"Streaming Plattform"
+			Description 	"Your own service!"
+			Spec        	Network
+			DevTime 		5
+			Server          0.001
+			CodeArt 		1
+			Optional 		True
+			Submarkets   	[ 2; 2; 1 ]
+			Features
+				[
+					{
+					Name            "240p Support"
+					DevTime 		1
+					Level			1
+					CodeArt			1
+					Submarkets 		[ 1; 1; 0 ]
+					}
+					{
+					Name            "360p Support"
+					DevTime 		1
+					Level			1
+					CodeArt			1
+					Submarkets 		[ 1; 2; 0 ]
+					}
+					{
+					Name            "480p Support"
+					DevTime 		2
+					Level			1
+					CodeArt			1
+					Submarkets 		[ 1; 3; 0 ]
+					}
+					{
+					Name 			"Subscriptions"
+					DevTime 		3
+					Level 			1
+					CodeArt 		1
+					Submarkets 		[ 2; 2; 1 ]
+					}
+					{
+					Name 			"Valoration System"
+					Description 	"Be sure to SMASH that like button"
+					DevTime 		3
+					Level 			1
+					CodeArt 		1
+					Submarkets 		[ 1; 2; 1 ]
+					Unlock 			1995
+					}
+					{
+					Name            "720p Support"
+					DevTime 		3
+					Level			2
+					CodeArt			1
+					Submarkets 		[ 1; 3; 0 ]
+					Unlock 			1998
+					}
+					{
+					Name            "1080p Support"
+					DevTime 		4
+					Level			2
+					CodeArt			1
+					Submarkets 		[ 1; 4; 0 ]
+					Unlock 			2000
+					}
+					{
+					Name            "Donations"
+					Description     "Support your favorite streamer"
+					DevTime 		4
+					Level			2
+					CodeArt			1
+					Submarkets 		[ 1; 3; 2 ]
+					Unlock 			2000
+					}
+					{
+					Name            "1440p Support"
+					DevTime 		5
+					Level			2
+					CodeArt			1
+					Submarkets 		[ 1; 3; 1 ]
+					Unlock 			2006
+					}
+					{
+					Name            "4K Support"
+					DevTime 		5
+					Level			2
+					CodeArt			1
+					Submarkets 		[ 2; 5; 1 ]
+					Unlock 			2014
+					}
+				]
+			}
+		]
+	}
