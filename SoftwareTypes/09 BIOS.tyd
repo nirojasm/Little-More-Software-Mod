@@ -1,0 +1,159 @@
+SoftwareType
+	{
+	Name            BIOS
+	Category    	Software
+	Description 	"The BIOS (Basic Input-Output System) executes on every reboot and has all the basic procedures and firmware of the hardware."
+	Random			0.3
+	Popularity		0.5
+	Retention		65
+	Iterative		1
+	IdealPrice		45
+	OptimalDevTime	35
+	SubmarketNames	[ Stability; Fiability; Speed ]
+	NameGenerator   BIOS
+	InHouse			True
+	Features
+		[
+			{
+				Name 			"Core"
+				Spec            System
+				DevTime         6
+				CodeArt			1
+				Submarkets 		[ 1; 1; 0 ]
+				Features
+					[
+						{
+						Name 			"CMOS Features"
+						DevTime 		3
+						Level           1
+						CodeArt         1
+						Submarkets 	    [ 1; 1; 0 ]
+						}
+						{
+						Name 			"Easy BIOS Flashing"
+						Description     "Not on thunderstorms"
+						DevTime 		3
+						Level           1
+						CodeArt         1
+						Submarkets 	    [ 1; 2; 0 ]
+						}
+						{
+						Name 			"Dual BIOS"
+						Description     "Try to not brick it"
+						DevTime 		3
+						Level           2
+						CodeArt 		1
+						Submarkets 	    [ 3; 2; 0 ]
+						}
+						{
+						Name 			"Bootblock"
+						Description     "Additional protection"
+						DevTime 		4
+						Level           2
+						CodeArt 		1
+						Submarkets 	    [ 4; 2; 0 ]
+						}
+						{
+						Name 			"Power Management"
+						DevTime 		2
+						Level           2
+						CodeArt 		1
+						Submarkets 	    [ 1; 3; 0 ]
+						}
+					]
+			}
+			{
+				Name 			"Tuning"
+				Optional        True
+				Spec            Algorithms
+				DevTime         5
+				CodeArt			1
+				Submarkets 		[ 0; 1; 2 ]
+				Features
+					[
+						{
+						Name 			"XMP Support"
+						Description		"Faster Speeds!"
+						DevTime 		3
+						Level			1
+						CodeArt 		1
+						Submarkets      [ 1; 1; 3 ]
+						}
+						{
+						Name 			"Easy Tuning"
+						DevTime 		3
+						Level			1
+						CodeArt 		1
+						Submarkets      [ 0; 2; 1 ]
+						}
+						{
+						Name 			"Game Boost"
+						DevTime 		3
+						Level			1
+						CodeArt 		1
+						Submarkets      [ 0; 0; 2 ]
+						Unlock          1985
+						}
+						{
+						Name            "Experimental Tuning"
+						Description     "Warranty Void"
+						DevTime         4
+						Level           2
+						CodeArt         1
+						Submarkets      [ 0; 1; 3 ]
+						}
+						{
+						Name 			"Overclocking"
+						Description		"Don't screw it up"
+						DevTime 		4
+						Level			2
+						CodeArt 		1
+						Submarkets      [ 0; 1; 3 ]
+						Unlock          1990
+						}
+						{
+						Name 			"RGB Tuning"
+						Description		"More FPS"
+						DevTime 		4
+						Level			2
+						CodeArt 		1
+						Submarkets      [ 0; 2; 5 ]
+						Unlock          2005
+						}
+					]
+			}
+			{
+				Name 			"Interface"
+				Spec            2D
+				DevTime         3
+				CodeArt			0
+				Optional        True
+				Submarkets 		[ 1; 2; 1 ]
+				Features
+					[
+						{
+						Name 			"Text-Based"
+						DevTime 		2
+						Level			1
+						CodeArt 		0
+						Submarkets      [ 1; 1; 0 ]
+						}
+						{
+						Name 			"Basic Forms"
+						Description     "Display graphical data figures"
+						DevTime 		3
+						Level			1
+						CodeArt 		0
+						Submarkets      [ 1; 2; 1 ]
+						}
+						{
+						Name            "Advanced Forms"
+			            DevTime 		4
+			            Level           2
+			            CodeArt  		0
+			            Submarkets      [ 1; 3; 1 ]  
+						}
+					]
+			}
+		]
+	}

@@ -1,0 +1,43 @@
+SoftwareType
+	{
+	Name 			"Benchmarking Software"
+	Category    	Software
+	Description 	"Benchmark your gaming rig."
+	Random 			0.5
+	Popularity      0.8
+	Retention 		65
+	Iterative 		1
+	Unlock  		2000
+	IdealPrice 		50
+	OptimalDevTime  
+	SubmarketNames  [ Accuracy; Quality; Speed ]
+	NameGenerator   Benchmark
+	OSSupport       Computer
+	InHouse         True
+	Features
+		[
+			{
+			Name 			"Benchmark Features"
+			Description 	"Operations, and more math"
+			Spec	 		Algorithms
+			DevTime 		5
+			CodeArt 		1
+			Submarkets 		[ 2; 1; 1 ]
+			Features 		
+				[
+				]
+			}
+			{
+			Name 			"3D"
+			Description 	"The actual benchmark program"
+			Spec 			3D
+			DevTime 		4
+			CodeArt 		0.5
+			Dependencies    "3D Editor"
+			Submarkets 		[ 1; 2; 1 ]
+			Features
+				[
+				]
+			}
+		]
+	}

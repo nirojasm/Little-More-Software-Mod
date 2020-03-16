@@ -1,0 +1,161 @@
+SoftwareType
+	{
+	Name 			"Benchmarking Software"
+	Category    	Software
+	Description 	"Benchmark your gaming rig."
+	Random 			0.5
+	Popularity      0.8
+	Retention 		65
+	Iterative 		1
+	Unlock  		2000
+	IdealPrice 		50
+	OptimalDevTime  52
+	SubmarketNames  [ Accuracy; Quality; Speed ]
+	NameGenerator   Benchmark
+	OSSupport       Computer
+	InHouse         True
+	Features
+		[
+			{
+			Name 			"Benchmark Features"
+			Description 	"Operations, and more math"
+			Spec	 		Algorithms
+			DevTime 		4
+			CodeArt 		1
+			Submarkets 		[ 2; 1; 1 ]
+			Features 		
+				[
+					{
+					Name            "Performance Test"
+			   		DevTime 		2
+		        	Level           1
+			    	CodeArt  		0.5
+			    	Submarkets      [ 1; 1; 1 ] 
+					}
+					{
+					Name 			"Stress Test"
+					DevTime 		2
+					Level			1
+					CodeArt			0.5
+					Submarkets 		[ 2; 3; 1 ]
+					}
+					{
+					Name 			"Leaderboards"
+					Description     "Compete with people around the world"
+					DevTime 		3
+					Level			1
+					CodeArt			1
+					Submarkets 		[ 3; 1; 1 ]
+					}
+					{
+					Name 			"OpenGL API Support"
+					DevTime 		3
+					Level			1
+					CodeArt			1
+					Submarkets 		[ 3; 2; 1 ]
+					}
+					{
+					Name 			"DirectX API Support"
+					DevTime 		4
+					Level			2
+					CodeArt			1
+					Submarkets 		[ 3; 3; 2 ]
+					}
+					{
+					Name 			"Per-frame statistics"
+					DevTime 		4
+					Level			2
+					CodeArt			1
+					Submarkets 		[ 4; 2; 1 ]
+					}
+					{
+					Name 			"VR Test"
+					DevTime 		5
+					Level			2
+					CodeArt			0.5
+					Submarkets 		[ 2; 3; 1 ]
+					Unlock          2015
+					}
+					{
+					Name 			"Vulkan API Support"
+					DevTime 		5
+					Level			2
+					CodeArt			1
+					Submarkets 		[ 3; 3; 2 ]
+					Unlock          2016
+					}
+				]
+			}
+			{
+			Name 			"3D"
+			Description 	"The actual benchmark program"
+			Spec 			3D
+			DevTime 		4
+			CodeArt 		0.5
+			Dependencies    "3D Editor"
+			Submarkets 		[ 1; 2; 1 ]
+			Features
+				[
+					{
+					Name 			"FHD"
+					DevTime 		2
+					Level			1
+					CodeArt			0
+					Submarkets 		[ 1; 1; 1 ]
+					}
+					{
+					Name 			"Motion Blur"
+					DevTime 		3
+					Level			1
+					CodeArt			0
+					Submarkets 		[ 1; 2; 1 ]
+					}
+					{
+					Name 			"Depth of Field"
+					DevTime 		3
+					Level			1
+					CodeArt			0
+					Submarkets 		[ 1; 2; 1 ]
+					}
+					{
+					Name 			"Shaders"
+					DevTime 		4
+					Level			1
+					CodeArt			0
+					Submarkets 		[ 1; 2; 1 ]
+					}
+					{
+					Name 			"Water Reflections"
+					DevTime 		3
+					Level			2
+					CodeArt			0
+					Submarkets 		[ 1; 2; 2 ]
+					}
+					{
+					Name 			"Hair Physics"
+					DevTime 		4
+					Level			2
+					CodeArt			0
+					Submarkets 		[ 1; 3; 1 ]
+					Unlock          2005
+					}
+					{
+					Name 			"4K Support"
+					DevTime 		5
+					Level			2
+					CodeArt			0
+					Submarkets 		[ 1; 4; 1 ]
+					Unlock          2014
+					}
+					{
+					Name 			"Ray Tracing"
+					DevTime 		6
+					Level			2
+					CodeArt			0
+					Submarkets 		[ 2; 4; 1 ]
+					Unlock          2017
+					}
+				]
+			}
+		]
+	}

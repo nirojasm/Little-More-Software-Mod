@@ -1,0 +1,14 @@
+CompanyType
+	{
+	Specialization		"Benchmarks"
+	PerYear			0.3
+	Min				2
+	Max				3
+	Types
+		[
+			{
+			Software	"Benchmarking Software"
+			Chance		1
+			}
+		]
+	}
