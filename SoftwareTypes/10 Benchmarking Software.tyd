@@ -8,7 +8,7 @@ SoftwareType
 	Retention 		65
 	Iterative 		1
 	Unlock  		2000
-	IdealPrice 		50
+	IdealPrice 		55
 	OptimalDevTime  52
 	SubmarketNames  [ Accuracy; Quality; Speed ]
 	NameGenerator   Benchmark

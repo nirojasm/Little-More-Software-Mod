@@ -1,0 +1,18 @@
+CompanyType
+	{
+	Specialization		Games & Gaming Tools
+	PerYear				0.2
+	Min					3
+	Max					6
+	Types
+		[
+			{
+			Software	Game
+			Chance		0.7
+			}
+			{
+			Software	Games Launcher
+			Chance 		0.5
+			}
+		]
+	}

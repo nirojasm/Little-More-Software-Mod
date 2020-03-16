@@ -126,6 +126,15 @@ SoftwareType
 					CodeArt		1
 					Submarkets	[ 1; 1; 1 ]
 					}
+					{
+					Name 			"Game Launcher Support"
+					DevTime 		4
+					Level 			2
+					CodeArt 		1
+					Dependencies	"Games Launcher"
+					Submarkets  	[ 1; 0; 0 ]
+					Unlock 			2000
+					}
 				]
 			}
 			{
