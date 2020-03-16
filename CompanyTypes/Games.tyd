@@ -8,11 +8,11 @@ CompanyType
 		[
 			{
 			Software	Game
-			Chance		0.7
+			Chance		0.5
 			}
 			{
 			Software	Games Launcher
-			Chance 		0.5
+			Chance 		0.4
 			}
 		]
 	}
