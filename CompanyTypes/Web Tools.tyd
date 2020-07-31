@@ -1,0 +1,18 @@
+CompanyType
+	{
+	Specialization		Web Tools
+	PerYear				0.2
+	Min					3
+	Max					6
+	Types
+		[
+			{
+			Software	Web Browser
+			Chance		1
+			}
+			{
+			Software 	VPN
+			Chance 		1
+			}
+		]
+	}

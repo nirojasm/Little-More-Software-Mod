@@ -1,0 +1,30 @@
+SoftwareType
+	{
+	Name 			"Photo Editor"
+	Category 		Software
+	Description 	"Surf the internet"
+	Random 			0.6
+	Popularity 		85
+	Retention 		75
+	Iterative 		1
+	IdealPrice 		45
+	OptimalDevTime
+	SubmarketNames 	[ ; ; ]
+	NameGenerator 	PhotoEditor
+	OSSupport 		[ Computer; Mobile ]
+	InHouse 		True
+	Features
+		[
+			{
+			Name
+			Description
+			Spec
+			DevTime
+			CodeArt
+			Submarkets
+			Features
+				[
+				]
+			}
+		]
+	}

@@ -1,0 +1,31 @@
+SoftwareType
+	{
+	Name 			"VPN Software"
+	Category 		Software
+	Description 	"Hacker-Level Tech"
+	Random 			0.6
+	Popularity 		85
+	Retention 		75
+	Iterative 		1
+	Unlock 			1995
+	IdealPrice 		45
+	OptimalDevTime
+	SubmarketNames 	[ ; ; ]
+	NameGenerator 	VPN
+	OSSupport 		[ Computer; Mobile ]
+	InHouse 		True
+	Features
+		[
+			{
+			Name
+			Description
+			Spec
+			DevTime
+			CodeArt
+			Submarkets
+			Features
+				[
+				]
+			}
+		]
+	}

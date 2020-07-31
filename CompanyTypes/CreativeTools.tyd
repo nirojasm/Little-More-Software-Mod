@@ -18,5 +18,9 @@ CompanyType
 			Software	"3D Editor"
 			Chance		1
 			}
+			{
+			Software 	"Photo Editor"
+			Chance 		1
+			}
 		]
 	}

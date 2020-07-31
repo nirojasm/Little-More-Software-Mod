@@ -1,0 +1,151 @@
+SoftwareType
+	{
+	Name 			"Web Browser"
+	Category 		Software
+	Description 	"Pay to surf the internet"
+	Random 			0.3
+	Popularity 		1
+	Retention 		60
+	Iterative 		0.8
+	IdealPrice 		25
+	Unlock 			1990
+	OptimalDevTime  25
+	SubmarketNames 	[ Usability; Speed; Privacy]
+	NameGenerator 	Browser
+	InHouse 		False
+	Features
+		[
+			{
+			Name 			"Core Functions"
+			Description		"Basic Functionality and Connectivity"
+			Spec 			Network
+			DevTime 		2
+			CodeArt 		1
+			Submarkets 		[ 1; 1; 1]
+			Features
+				[
+					{
+					Name 		"Search Engine"
+					DevTime 	3
+					Level 		1
+					CodeArt 	1
+					Submarkets  [ 1; 0; 1]
+					}
+					{
+					Name 		"Optimized Connection"
+					DevTime 	4
+					Level 		1
+					CodeArt 	1
+					Submarkets  [ 2; 4; 1]
+					}
+					{
+					Name 		"Plugins and Extensions"
+					Description "Install an Ad-Blocker first"
+					DevTime 	2
+					Level 		1
+					CodeArt 	1
+					Submarkets 	[ 3; 1; 0]
+					}
+					{
+					Name 			"Integrated VPN"
+					Dependencies    "VPN Software"
+					Unlock 			1995
+					DevTime 		4
+					Level 			2
+					CodeArt 		1
+					Submarkets  	[ 2; 0; 4]
+					}
+				]
+			}
+			{
+			Name 			"Graphic Features"
+			Description		"Be Creative"
+			Spec 			2D
+			DevTime 		3
+			CodeArt 		0.5
+			Submarkets      [ 2; 1; 1 ]
+			Features
+				[
+					{
+					Name 		"HTML"
+					DevTime 	2
+					Level 		1
+					CodeArt 	0.5
+					Submarkets  [ 2; 1; 0]
+					}
+					{
+					Name 		"CSS"
+					Description "Cascading Styled Sheets"
+					Unlock 		1996
+					DevTime 	2
+					Level 		1
+					CodeArt 	0.5
+					Submarkets  [ 3; 1; 0]
+					}
+					{
+					Name 		"JavaScript"
+					Unlock 		1997
+					DevTime 	2
+					Level 		1
+					CodeArt 	1
+					Submarkets  [ 2; 2; 1]
+					}
+					{
+					Name 		"HTML5"
+					Unlock      2014
+					DevTime 	4
+					Level 		2
+					CodeArt 	0.5
+					Submarkets  [ 2; 3; 1]
+					}
+
+				]
+
+			}
+			{
+			Name 			"Extra Functions"
+			Optional 		True
+			Spec 			System
+			DevTime 		3
+			CodeArt 		1
+			Submarkets      [ 2; 1; 2 ]
+			Features
+				[
+					{
+					Name 		"Cookies"
+					Description "Delicious"
+					DevTime 	2
+					Level 		1
+					CodeArt 	1
+					Submarkets  [ 1; 3; 0]
+					}
+					{
+					Name 		"Dark Mode"
+					Description "Protect your eyes"
+					DevTime 	2
+					Level 		1
+					CodeArt 	0.5
+					Submarkets  [ 3; 1; 0]
+					}
+					{
+					Name 		"HTTPS"
+					Description "Encrypted version of HTTP"
+					Unlock 		2000
+					DevTime 	4
+					Level 		2
+					CodeArt 	1
+					Submarkets 	[ 1; 1; 5]
+					}
+					{
+					Name 		"Dynamic No-Internet Alert"
+					Description "Dinosaurs jumping cacti"
+					Unlock 		2000
+					DevTime     3
+					Level 		2
+					CodeArt 	0.5
+					Submarkets  [ 4; 1; 1]
+					}
+				]
+			}
+		]
+	}

@@ -1,0 +1,14 @@
+CompanyType
+	{
+	Specialization		Development Tools
+	PerYear				0.2
+	Min					3
+	Max					6
+	Types
+		[
+			{
+			Software	IDE
+			Chance		1
+			}
+		]
+	}
