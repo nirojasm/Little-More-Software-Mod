@@ -2,29 +2,113 @@ SoftwareType
 	{
 	Name 			"VPN Software"
 	Category 		Software
-	Description 	"Hacker-Level Tech"
-	Random 			0.6
-	Popularity 		85
-	Retention 		75
-	Iterative 		1
-	Unlock 			1995
+	Description 	"Hacker-Level Tech" #haha
+	Random 			0.4
+	Popularity 		60
+	Retention 		60
+	Iterative 		0.5
+	Unlock 			1999
 	IdealPrice 		45
-	OptimalDevTime
-	SubmarketNames 	[ ; ; ]
+	OptimalDevTime  15
+	SubmarketNames 	[ Privacy; Speed; Practicability]
 	NameGenerator 	VPN
 	OSSupport 		[ Computer; Mobile ]
 	InHouse 		True
 	Features
 		[
 			{
-			Name
-			Description
-			Spec
-			DevTime
-			CodeArt
-			Submarkets
+			Name 			"Core"
+			Spec			Network
+			DevTime 		3
+			CodeArt 		1
+			Submarkets 		[ 1; 1; 1]
 			Features
 				[
+					{
+					Name 		"Basic Servers"
+					DevTime 	2
+					Level 		1
+					CodeArt 	1
+					Submarkets 	[ 1; 1; 1]
+					Server 		0.0003
+					}
+					{
+					Name 		"Anti-Tracker Protection"
+					DevTime 	2
+					Level 		1
+					CodeArt 	1
+					Submarkets 	[ 2; 1; 1]
+					}
+					{
+					Name 		"Integrated Ad-Block"
+					DevTime 	3
+					Level 		1
+					CodeArt 	1
+					Submarkets 	[ 3; 1; 2]
+					}
+					{
+					Name   		"Location Services"
+					Description "Be on 3 countries at the same time"
+					DevTime 	4
+					Level 		1
+					CodeArt 	1
+					Submarkets 	[ 2; 1; 3]
+					}
+					{
+					Name 		"Kill Switch"
+					Description "When the connection drops, a kill switch prevents unencrypted data from being transmitted"
+					DevTime 	5
+					Level 		2
+					CodeArt 	1
+					Submarkets 	[ 4; 1; 1]
+					}
+					{
+					Name 		"DNS Servers"
+					Description "Protect your data on the DNS translation"
+					DevTime 	4
+					Level 		2
+					CodeArt 	1
+					Submarkets 	[ 3; 1; 2]
+					}
+					{
+					Name 				"Mobile Optimization"
+					DevTime 			4
+					Level 				2
+					CodeArt 			1
+					Submarkets 			[ 1; 3; 2]
+					SoftwareCategories 	[Mobile]
+					}
+				]
+			}
+			{
+			Name 			"GUI"
+			Spec 			2D
+			DevTime 		3
+			CodeArt 		0.5
+			Submarkets 		[0; 1; 2]
+			Features
+				[
+					{
+					Name 		"Basic UI"
+					DevTime 	2
+					Level 		1
+					CodeArt 	0.5
+					Submarkets 	[ 0; 1; 1]
+					}
+					{
+					Name 		"Customization Options"
+					DevTime 	3
+					Level 		1
+					CodeArt 	0.5
+					Submarkets 	[0; 0; 2]
+					}
+					{
+					Name 		"Dark Mode"
+					DevTime 	3
+					Level 		1
+					CodeArt 	0.5
+					Submarkets 	[ 0; 0; 1]
+					}
 				]
 			}
 		]

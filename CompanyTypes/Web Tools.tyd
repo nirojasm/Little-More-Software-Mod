@@ -7,11 +7,11 @@ CompanyType
 	Types
 		[
 			{
-			Software	Web Browser
+			Software	"Web Browser"
 			Chance		1
 			}
 			{
-			Software 	VPN
+			Software 	"VPN"
 			Chance 		1
 			}
 		]

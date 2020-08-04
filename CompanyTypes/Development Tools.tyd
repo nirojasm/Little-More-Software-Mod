@@ -7,7 +7,7 @@ CompanyType
 	Types
 		[
 			{
-			Software	IDE
+			Software	"IDE"
 			Chance		1
 			}
 		]

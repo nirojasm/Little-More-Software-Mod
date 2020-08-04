@@ -7,11 +7,11 @@ CompanyType
 	Types
 		[
 			{
-			Software	Game
+			Software	"Game"
 			Chance		0.5
 			}
 			{
-			Software	Games Launcher
+			Software	"Games Launcher"
 			Chance 		0.4
 			}
 		]
