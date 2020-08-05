@@ -7,23 +7,196 @@ SoftwareType
 	Popularity 		85
 	Retention 		75
 	Iterative 		1
-	IdealPrice 		45
-	OptimalDevTime
-	SubmarketNames 	[ ; ; ]
+	Unlock 			1991 #Visual Basic Launch
+	IdealPrice 		140
+	OptimalDevTime  55
+	SubmarketNames 	[ Speed; Quality; Versatility]
 	NameGenerator 	IDE
 	OSSupport 		Computer
 	InHouse 		True
 	Features
 		[
 			{
-			Name
-			Description
-			Spec
-			DevTime
-			CodeArt
-			Submarkets
+			Name 			"Coding"
+			Description 	"All the tools to create a functional program"
+			Spec 			System
+			DevTime 		4
+			CodeArt 		1
+			Submarkets 		[ 1; 1; 1]
 			Features
 				[
+					{
+					Name 		"Text Editor"
+					DevTime 	2
+					Level 		1
+					CodeArt 	1
+					Submarkets 	[ 1; 1; 1]
+					}
+					{
+					Name 		"Debugger"
+					DevTime 	3
+					Level 		1
+					CodeArt 	1
+					Submarkets 	[ 1; 1; 1]
+					}
+					{
+					Name 		"Compiler"
+					Description "Missing ; on line 32"
+					DevTime 	3
+					Level 		1
+					CodeArt 	1
+					Submarkets 	[ 1; 1; 1]
+					}
+					{
+					Name 		"Command Prompt"
+					DevTime 	4
+					Level 		1
+					CodeArt 	1
+					Submarkets 	[ 2; 2; 1]
+					}
+					{
+					Name 		"Syntax Highlighting"
+					DevTime 	3
+					Level 		1
+					CodeArt 	1
+					Submarkets 	[ 1; 3; 2]
+					}
+					{
+					Name 		"Multi-Language Support"
+					DevTime 	5
+					Level 		1
+					CodeArt 	1
+					Submarkets 	[ 1; 3; 2]
+					}
+					{
+					Name 		"Code Completion"
+					Description "Press Tab Key"
+					DevTime 	3
+					Level 		1
+					CodeArt 	1
+					Submarkets 	[ 1; 2; 1]
+					}
+					{
+					Name 		"Runtime Compilation"
+					Description "No need to stop the program's execution"
+					DevTime 	4
+					Level 		2
+					CodeArt 	1
+					Submarkets 	[ 3; 3; 2]
+					}
+					{
+					Name 		"Refactor"
+					DevTime 	6
+					Level 		2
+					CodeArt 	1
+					Submarkets 	[ 3; 4; 2]
+					}
+				]
+			}
+			{
+			Name 			"Integrations and Plugins"
+			Description 	"You know the 'I' in IDE means Integrated, right?"
+			Spec 			Algorithms
+			DevTime 		5
+			CodeArt 		1
+			Submarkets 		[ 2; 1; 2]
+			Features
+				[
+					{
+					Name 		"Package Manager"
+					Description "Nuggets"
+					DevTime 	4
+					Level 		1
+					CodeArt 	1
+					Submarkets 	[ 2; 3; 2]
+					}
+					{
+					Name 		"Web Frameworks"
+					DevTime 	4
+					Level 		1
+					CodeArt 	1
+					Submarkets 	[ 1; 3; 2]
+					}
+					{
+					Name 		"Web Code Repositories" #Git
+					DevTime 	4
+					Level 		1
+					CodeArt 	1
+					Submarkets 	[ 1; 1; 1]
+					}
+					{
+					Name 		"GUI Forms"
+					Description "GUI development tools"
+					DevTime 	5
+					Level 		1
+					CodeArt 	1
+					Submarkets 	[ 1; 1; 2]
+					}
+					{
+					Name 		"Data Processing"
+					DevTime 	5
+					Level 		2
+					CodeArt 	1
+					Submarkets 	[ 2; 3; 2]
+					}
+					{
+					Name 		"Plugin Development"
+					Description "Create plugins and help your own IDE"
+					DevTime 	5
+					Level 		2
+					CodeArt 	1
+					Submarkets 	[ 1; 3; 3]
+					}
+					{
+					Name 		"Cloud Development"
+					DevTime 	7
+					Level 		2
+					CodeArt 	1
+					Submarkets 	[ 4; 2; 4]
+					Server      0.003
+					}
+				]
+			}
+			{
+			Name 			"GUI"
+			Description 	"Remember, the user needs to be treated like a baby, GUI does that"
+			Spec 			2D
+			DevTime 		3
+			CodeArt 		0.5
+			Submarkets 		[ 0; 1; 1]
+			Dependencies    "2D Editor"
+			Features
+				[
+					{
+					Name 		"Coloured Words"
+					Description "Fancy"
+					DevTime 	2
+					Level 		1
+					CodeArt 	0.5
+					Submarkets 	[ 1; 1; 1]
+					}
+					{
+					Name 		"Dynamic Interface"
+					DevTime 	3
+					Level 		1
+					CodeArt 	1
+					Submarkets 	[ 2; 1; 2]
+					}
+					{
+					Name 		"Dark Mode"
+					Description "The most wanted feature"
+					DevTime 	4
+					Level 		1
+					CodeArt 	0
+					Submarkets 	[ 1; 3; 0]
+					}
+					{
+					Name 		"Data Analysis GUI"
+					DevTime 	4
+					Level 		2
+					CodeArt 	1
+					Submarkets 	[ 1; 3; 3]
+					}
 				]
 			}
 		]

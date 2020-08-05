@@ -2,29 +2,127 @@ SoftwareType
 	{
 	Name 			"Photo Editor"
 	Category 		Software
-	Description 	"Surf the internet"
+	Description 	"Tweak little image details"
 	Random 			0.6
-	Popularity 		85
-	Retention 		75
+	Popularity 		70
+	Retention 		50
 	Iterative 		1
-	IdealPrice 		45
-	OptimalDevTime
-	SubmarketNames 	[ ; ; ]
+	IdealPrice 		30
+	OptimalDevTime	25
+	SubmarketNames 	[ Customization; Quality; Usability]
 	NameGenerator 	PhotoEditor
-	OSSupport 		[ Computer; Mobile ]
-	InHouse 		True
+	OSSupport 		[ Computer; Phone ]
+	InHouse 		False
 	Features
 		[
 			{
-			Name
-			Description
-			Spec
-			DevTime
-			CodeArt
-			Submarkets
+			Name 			"Image Editing"
+			Spec 			2D
+			DevTime 		3
+			CodeArt 		0.5
+			Submarkets 		[ 1; 1; 1]
 			Features
 				[
+					{
+					Name 		"Color Tweaking"
+					DevTime 	2
+					Level 		1
+					CodeArt 	0.5
+					Submarkets 	[ 1; 1; 1]
+					}
+					{
+					Name 		"Red-Eye remover"
+					DevTime 	3
+					Level 		1
+					CodeArt 	0
+					Submarkets 	[ 1; 1; 1]
+					}
+					{
+					Name 		"Beautify"
+					DevTime 	3
+					Level 		1
+					CodeArt 	0.5
+					Submarkets 	[ 1; 2; 1]
+					}
+					{
+					Name 		"Quality Improver"
+					DevTime 	4
+					Level 		1
+					CodeArt 	0.5
+					Submarkets  [ 1; 3; 2]
+					}
+					{
+					Name 		"Brush"
+					DevTime 	3
+					Level 		1
+					CodeArt 	0
+					Submarkets 	[ 1; 2; 2]
+					}
+					{
+					Name 		"Editing Toolset"
+					Description "All the tools to enlarge your..."
+					DevTime 	5
+					Level 		2
+					CodeArt 	0
+					Submarkets  [ 1; 2; 3]
+					}
 				]
 			}
+			{
+			Name 			"Effects"
+			Spec 			3D
+			DevTime 		4
+			CodeArt 		0.5
+			Submarkets 		[ 2; 2; 1]
+			Dependencies 	"3D Editor"
+			Features
+				[
+					{
+					Name 		"Basic Effects"
+					DevTime 	1
+					Level 		1
+					CodeArt 	0
+					Submarkets  [ 1; 1; 1]
+					}
+					{
+					Name 		"Filters"
+					DevTime 	3
+					Level 		1
+					CodeArt 	0
+					Submarkets  [ 2; 1; 2]
+					}
+					{
+					Name 		"Stickers"
+					DevTime 	3
+					Level 		1
+					CodeArt 	0
+					Submarkets  [ 1; 2; 1]
+					}
+					{
+					Name 		"Custom Effects"
+					DevTime 	4
+					Level 		2
+					CodeArt 	0.5
+					Submarkets  [ 1; 2; 2]
+					}
+					{
+					Name 		"2D to 3D"
+					Description "Turn your photo to an object, with magic!"
+					DevTime 	5
+					Level 		2
+					CodeArt 	0.5
+					Submarkets  [ 2; 2; 3]
+					}
+					{
+					Name 		"Effects Library"
+					Description "Users can upload and download custom effects from a built-in library"
+					DevTime 	4
+					Level 		2
+					CodeArt 	0.5
+					Submarkets  [ 4; 1; 3]
+					}
+				]
+			}
+
 		]
 	}
